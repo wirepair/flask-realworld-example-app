@@ -17,6 +17,8 @@ class Config(object):
     JWT_AUTH_USERNAME_KEY = 'email'
     JWT_AUTH_HEADER_PREFIX = 'Token'
     CORS_ORIGIN_WHITELIST = [
+        'http://0.0.0.0/',
+        'http://localhost/',
         'http://0.0.0.0:4100',
         'http://localhost:4100',
         'http://0.0.0.0:8000',
