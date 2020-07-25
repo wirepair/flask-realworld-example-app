@@ -1,7 +1,8 @@
 FROM postgres:12-alpine
 
 ENV FLASK_APP /var/www/autoapp.py
-ENV FLASK_DEBUG 1
+ENV FLASK_DEBUG 0
+ENV POSTGRES_PASSWORD testtest
 
 RUN apk add --update npm yarn nginx python3-dev libffi-dev python3 py-pip libffi gcc musl-dev && \
     mkdir -p /var/www/ && mkdir -p /data/www/ && mkdir -p /run/nginx/

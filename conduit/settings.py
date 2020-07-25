@@ -37,7 +37,7 @@ class ProdConfig(Config):
     ENV = 'prod'
     DEBUG = False
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL',
-                                             'postgresql://localhost/example')
+                                             'postgresql://postgres:testtest@localhost/postgres')
 
 
 class DevConfig(Config):
